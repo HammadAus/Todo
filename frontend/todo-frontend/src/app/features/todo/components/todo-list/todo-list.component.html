@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>Todo List</h2>
+
+  <div class="form-row">
+    <input type="text" placeholder="Enter a task..." [(ngModel)]="newTask" (keyup.enter)="addTodo()" />
+
+    <button class="add-btn" (click)="addTodo()" title="Add new task">
+      <i class="fa-solid fa-plus"></i>
+    </button>
+  </div>
+
+  <ul>
+    <li *ngFor="let todo of todos; let i = index" class="todo-item">
+      <!-- <span>{{ todo.title }}</span> -->
+      <input type="checkbox" [checked]="todo.isCompleted" class="todo-checkbox" (change)="toggleComplete(todo, i)" />
+      <span [class.completed]="todo.isCompleted" class="todo-title">{{ todo.title }}</span>
+      <button class="delete-btn" (click)="deleteTodo(todo.id, i)" title="Delete this task">
+        <i class="fa-regular fa-trash-can"></i>
+      </button>
+     
+    </li>
+  </ul>
+
+  <p *ngIf="todos.length === 0" class="empty">Your list is empty</p>
+</div>

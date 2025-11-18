@@ -1,0 +1,145 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 480px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #d0d0d0;
+  font-size: 16px;
+  background: #e3f2fd;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  background: #fff;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+.add-btn {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.2s ease, transform 0.1s;
+}
+
+.add-btn:hover {
+  background: #005fcc;
+}
+
+.add-btn:active {
+  transform: scale(0.94);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: #fafafa;
+  margin-bottom: 12px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+li:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+  transform: translateY(-1px);
+}
+
+li span {
+  font-size: 16px;
+  color: #333;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.delete-btn i {
+  color: #e63946;
+  transition: color 0.2s ease, transform 0.1s ease;
+}
+
+.delete-btn:hover i {
+  color: #ff6b6b;
+  transform: scale(1.12);
+}
+
+.empty {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-checkbox {
+  flex: 0 0 10%; 
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.todo-title {
+  flex: 0 0 80%;
+  word-wrap: break-word;
+}
