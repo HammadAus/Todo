@@ -162,13 +162,6 @@ Includes: - xUnit test suite\
 - Moq-based mock repository tests\
 - Service-level behavioral tests
 
-### **Frontend Tests**
-
-If running Angular tests:
-
-``` bash
-npm test
-```
 
 ------------------------------------------------------------------------
 
