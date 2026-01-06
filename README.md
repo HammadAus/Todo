@@ -1,9 +1,7 @@
 # TODO List Application --- Angular 20 & .NET 10 (Clean Architecture)
 
-This project is a simple TODO application built for a pre-interview
-technical assignment.\
-It demonstrates clean architecture, SOLID principles, unit testing, and
-modern Angular development.\
+This project is a simple TODO application built to demonstrates clean architecture, SOLID principles, unit testing, and
+modern Angular development.
 Users can view their TODO items, add new tasks, delete tasks, and toggle
 their completion status.
 
@@ -158,8 +156,8 @@ Run tests from `/backend/Api.Tests`:
 dotnet test
 ```
 
-Includes: - xUnit test suite\
-- Moq-based mock repository tests\
+Includes: - xUnit test suite
+- Moq-based mock repository tests
 - Service-level behavioral tests
 
 
@@ -167,13 +165,13 @@ Includes: - xUnit test suite\
 
 ## ✨ Completed Requirements
 
--   View list of TODOs\
--   Add a new TODO\
--   Delete a TODO\
--   Toggle completion state\
--   In-memory backend (per assignment requirement)\
--   Clean Architecture with DI\
--   Validation, custom middleware, and logging\
+-   View list of TODOs
+-   Add a new TODO
+-   Delete a TODO
+-   Toggle completion state
+-   In-memory backend (per assignment requirement)
+-   Clean Architecture with DI
+-   Validation, custom middleware, and logging
 -   Frontend & backend fully integrated
 
 ------------------------------------------------------------------------
